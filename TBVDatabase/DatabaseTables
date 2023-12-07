@@ -1,0 +1,40 @@
+CREATE TABLE `Match` (
+  `id` int NOT NULL,
+  `tournament` int DEFAULT NULL,
+  `team1` int DEFAULT NULL,
+  `team2` int DEFAULT NULL,
+  `team1Score` int DEFAULT NULL,
+  `team2Score` int DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  `round` int DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `team1_idx` (`team1`),
+  KEY `team2_idx` (`team2`),
+  KEY `tournament_idx` (`tournament`),
+  CONSTRAINT `team1` FOREIGN KEY (`team1`) REFERENCES `Team` (`id`),
+  CONSTRAINT `team2` FOREIGN KEY (`team2`) REFERENCES `Team` (`id`),
+  CONSTRAINT `tournament` FOREIGN KEY (`tournament`) REFERENCES `Tournament` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `Player` (
+  `id` int NOT NULL,
+  `team` int NOT NULL,
+  `firstName` varchar(45) NOT NULL,
+  `lastName` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `team_idx` (`team`),
+  CONSTRAINT `team` FOREIGN KEY (`team`) REFERENCES `Team` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `Team` (
+  `id` int NOT NULL,
+  `name` varchar(45) NOT NULL,
+  `wins` int DEFAULT NULL,
+  `losses` int DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `Tournament` (
+  `id` int NOT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  `startDate` date DEFAULT NULL,
+  `endDate` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
