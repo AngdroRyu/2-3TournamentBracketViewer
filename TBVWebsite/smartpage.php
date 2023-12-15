@@ -51,8 +51,8 @@ $matchType = $_GET['content'];
 		$sql_playerList2 = "SELECT Player.firstName, Player.lastName FROM AgileExpG23.Player WHERE Player.team='8'";
 		$sql_team1Score = "SELECT team1Score FROM AgileExpG23.Match WHERE id='4'";
 		$sql_team2Score = "SELECT team2Score FROM AgileExpG23.Match WHERE id='4'";
-		$sql_team1Final = "SELECT IIF(team1Score>team2Score, 'Won', 'Lost') AS 'final1' FROM AgileExpG23.Match WHERE id='4'";
-		$sql_team2Final = "SELECT IIF(team1Score<team2Score, 'Won', 'Lost') AS 'final2' FROM AgileExpG23.Match WHERE id='4'";
+		$sql_team1Final = "SELECT IF(team1Score>team2Score, 'Won', 'Lost') AS 'final1' FROM AgileExpG23.Match WHERE id='4'";
+		$sql_team2Final = "SELECT IF(team1Score<team2Score, 'Won', 'Lost') AS 'final2' FROM AgileExpG23.Match WHERE id='4'";
 		break;
 	case "content_5":
 		$sql_teamName1 = "SELECT Team.name FROM AgileExpG23.Team WHERE Team.id='2'";
