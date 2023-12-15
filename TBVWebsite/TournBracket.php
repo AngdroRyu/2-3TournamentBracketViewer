@@ -24,7 +24,7 @@ if($result1->num_rows > 0 AND $result2->num_rows > 0){
 			echo'<ul class="round round-1">';
 			echo'<li class="spacer">&nbsp;</li>';
 			echo'<li class="game game-top">'.$row1["name"].'</li>';
-			echo'<li class="game game-spacer"><a href="diverAdd.html">Match View 1&nbsp;</a></li>';
+			echo'<li class="game game-spacer"><a href="matchViewOne.html">Match View 1&nbsp;</a></li>';
 			echo'<li class="game game-bottom">'.$row2["name"].'</li>';
 			echo'<li class="spacer">&nbsp;</li>';
 		
@@ -42,7 +42,7 @@ if($result1->num_rows > 0 AND $result2->num_rows > 0){
 	while($row1 = $result1->fetch_assoc() AND $row2 = $result2->fetch_assoc())
 	{
 			echo'<li class="game game-top">'.$row1["name"].'</li>';
-			echo'<li class="game game-spacer"><a href="diverAdd.html">Match View 2&nbsp;</a></li>';
+			echo'<li class="game game-spacer"><a href="matchViewTwo.html">Match View 2&nbsp;</a></li>';
 			echo'<li class="game game-bottom">'.$row2["name"].'</li>';
 			echo'<li class="spacer">&nbsp;</li>';
 		
@@ -60,7 +60,7 @@ if($result1->num_rows > 0 AND $result2->num_rows > 0){
 	while($row1 = $result1->fetch_assoc() AND $row2 = $result2->fetch_assoc())
 	{
 			echo'<li class="game game-top">'.$row1["name"].'</li>';
-			echo'<li class="game game-spacer"><a href="diverAdd.html">Match View 3&nbsp;</a></li>';
+			echo'<li class="game game-spacer"><a href="matchViewThree.html">Match View 3&nbsp;</a></li>';
 			echo'<li class="game game-bottom">'.$row2["name"].'</li>';
 			echo'<li class="spacer">&nbsp;</li>';
 		
@@ -78,7 +78,7 @@ if($result1->num_rows > 0 AND $result2->num_rows > 0){
 	while($row1 = $result1->fetch_assoc() AND $row2 = $result2->fetch_assoc())
 	{
 			echo'<li class="game game-top">'.$row1["name"].'</li>';
-			echo'<li class="game game-spacer"><a href="diverAdd.html">Match View 4&nbsp;</a></li>';
+			echo'<li class="game game-spacer"><a href="matchViewFour.html">Match View 4&nbsp;</a></li>';
 			echo'<li class="game game-bottom">'.$row2["name"].'</li>';
 			echo'<li class="spacer">&nbsp;</li>';
 		
@@ -100,7 +100,7 @@ if($result1->num_rows > 0 AND $result2->num_rows > 0){
 			echo'<ul class="round round-2">';
 			echo'<li class="spacer">&nbsp;</li>';
 			echo'<li class="game game-top">'.$row1["name"].'</li>';
-			echo'<li class="game game-spacer"><a href="diverAdd.html">Match View 5&nbsp;</a></li>';
+			echo'<li class="game game-spacer"><a href="matchViewFive.html">Match View 5&nbsp;</a></li>';
 			echo'<li class="game game-bottom">'.$row2["name"].'</li>';
 			echo'<li class="spacer">&nbsp;</li>';
 		
@@ -118,7 +118,7 @@ if($result1->num_rows > 0 AND $result2->num_rows > 0){
 	while($row1 = $result1->fetch_assoc() AND $row2 = $result2->fetch_assoc())
 	{
 			echo'<li class="game game-top">'.$row1["name"].'</li>';
-			echo'<li class="game game-spacer"><a href="diverAdd.html">Match View 6&nbsp;</a></li>';
+			echo'<li class="game game-spacer"><a href="matchViewSix.html">Match View 6&nbsp;</a></li>';
 			echo'<li class="game game-bottom">'.$row2["name"].'</li>';
 			echo'<li class="spacer">&nbsp;</li>';
 		
@@ -140,7 +140,7 @@ if($result1->num_rows > 0 AND $result2->num_rows > 0){
 			echo'<ul class="round round-3">';
 			echo'<li class="spacer">&nbsp;</li>';
 			echo'<li class="game game-top">'.$row1["name"].'</li>';
-			echo'<li class="game game-spacer"><a href="diverAdd.html">Match View 6&nbsp;</a></li>';
+			echo'<li class="game game-spacer"><a href="matchViewSeven.html">Match View 7&nbsp;</a></li>';
 			echo'<li class="game game-bottom">'.$row2["name"].'</li>';
 			echo'<li class="spacer">&nbsp;</li>';
 		
@@ -160,7 +160,7 @@ if($result1->num_rows > 0 AND $result2->num_rows > 0){
 			echo'<ul class="round round-3">';
 			echo'<li class="spacer">&nbsp;</li>';
 			echo'<li class="game game-top">'.$row1["name"].'</li>';
-			echo'<li class="game game-spacer"><a href="diverAdd.html">Match View 6&nbsp;</a></li>';
+			echo'<li class="game game-spacer"><a href="matchViewEight.html">Winner Stats &nbsp;</a></li>';
 			echo'<li class="game game-bottom">'.$row2["name"].'</li>';
 			echo'<li class="spacer">&nbsp;</li>';
 		
@@ -185,13 +185,13 @@ if($result1->num_rows > 0 AND $result2->num_rows > 0){
 			echo'<ul class="round round-4">';
 			echo'<li class="spacer">&nbsp;</li>';
 			echo'<li class="game game-top">'.$row1["name"].'</li>';
-			echo'<li class="game game-spacer"><a href="diverAdd.html">Match View 6&nbsp;</a></li>';
+			echo'<li class="game game-spacer"><a href="matchViewEight.html">Winner Stats &nbsp;</a></li>';
 			}
 		else{
 			echo'<ul class="round round-4">';
 			echo'<li class="spacer">&nbsp;</li>';
 			echo'<li class="game game-top">'.$row2["name"].'</li>';
-			echo'<li class="spacer"><a href="diverAdd.html">Match View 6&nbsp;</a></li>';
+			echo'<li class="spacer"><a href="matchViewEight.html">Winner Stats &nbsp;</a></li>';
 		}
 
 				
