@@ -51,3 +51,73 @@ li.game{
   li.game-bottom{ 
     border-top:1px solid #aaa;
   }
+
+hr {
+        margin-top: 70px;
+        width: 100%;
+        height: 2px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #000000;
+      }
+
+.vertical {
+	position: absolute;
+        margin-top: 0px;
+        margin-bottom: 0px;
+	border-left: 3px solid black;
+	height: 620px;
+	left: 50%;
+}
+
+#winnerNameTable {
+        position: absolute;
+        top: 20px;
+        left: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 50px;
+     
+}
+
+#winnerInfoTable {
+        position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 30px;
+	width: 1000px;
+        left: 25%;
+        top: 120px;
+}
+
+#team1Name {
+        position: absolute;
+        left: 10%;
+	font-size: 40px;
+        padding: 30px;
+}
+
+#team1Info {
+        top: 150px;
+        position: absolute;
+        left: 10%;
+	font-size:24px;
+	padding: 30px;
+}
+
+#team2Name {
+
+	position: absolute;
+        left: 60%;
+	font-size: 40px;
+        padding: 30px;
+}
+
+#team2Info {
+        top: 150px;
+	position: absolute;
+        left: 60%;
+	font-size:24px;
+	padding: 30px;
+
+}
